@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH Mailer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="send">
+            <h4>Sending Information</h4>
+            <div class="send_subject">
+                <h5>Subject</h5>
+                <h6>Email Title</h6>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="send_sender">
+                <h5>Sender Email</h5>
+                <h6>Email</h6>
+                <input type="email" name="mail" id="mail">
+                <h6>Password</h6>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div class="send_to">
+                <h5>To</h5>
+                <h6>Format</h6>
+                <select name="inp_format" id="inp_format">
+                    <option value="json">JSON</option>
+                    <option value="text">Text</option>
+                </select>
+                <textarea name="format" id="format" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_header">
+                <h5>Header</h5>
+                <label>Cover Image:</label>
+                <button type="submit" id="load">Load</button>
+                <h6>Title</h6>
+                <input type="text" name="head_cont" id="head_cont">
+            </div>
+            <div class="con_body">
+                <h5>Body</h5>
+                <textarea name="text_body" id="text_body" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="foot">
+                <h5>Footer</h5>
+                <h6>About (left side)</h6>
+                <input type="text" name="left" id="left">
+                <h6>Contact (right side)</h6>
+                <textarea name="right" id="right" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Template</button>
+            <button type="submit">Preview</button>  
+            <button type="submit">Send</button>
+            <div class="foot_text">
+                <textarea name="foot_last" id="foot_last" cols="30" rows="10"></textarea>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>
